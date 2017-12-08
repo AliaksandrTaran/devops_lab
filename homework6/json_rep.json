@@ -39,7 +39,7 @@
       "wrapt=1.10.11"
    ],
    "pip location":"/home/student/.pyenv/versions/2.7.14/bin/pip",
-   "python-path":"",
+   "python-path":"/home/student/.pyenv/versions/2.7.14/bin/python",
    "site-packages":"/home/student/.pyenv/versions/2.7.14/lib/python2.7/site-packages",
    "version":"2.7.14"
 }

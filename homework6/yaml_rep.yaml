@@ -8,6 +8,6 @@ packages name and version: [ascii-graph=1.4.3, astroid=1.5.3, backports.functool
   pyyaml=3.12, requests=2.18.4, setuptools=28.8.0, singledispatch=3.4.0.3, six=1.11.0,
   uritemplate.py=3.0.2, uritemplate=3.0.0, urllib3=1.22, virtualenv=15.1.0, wrapt=1.10.11]
 pip location: /home/student/.pyenv/versions/2.7.14/bin/pip
-python-path: ''
+python-path: /home/student/.pyenv/versions/2.7.14/bin/python
 site-packages: /home/student/.pyenv/versions/2.7.14/lib/python2.7/site-packages
 version: 2.7.14

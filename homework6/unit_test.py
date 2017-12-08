@@ -7,8 +7,8 @@ class TestSys(unittest.TestCase):
 	pass
 
     def test_check_for_files(self):
-        self.assertTrue(task_6.info_catcher(), (os.path.exists('./json_rep.json') == True))
-        self.assertTrue(task_6.info_catcher(), (os.path.exists('./yaml_rep.yaml') == True))
+        self.assertFalse(task_6.info_catcher(), (os.path.isdir('./json_rep.json')))
+        self.assertFalse(task_6.info_catcher(), (os.path.isdir('./yaml_rep.yaml')))
 
 if __name__=='__main__':
         unittest.main()

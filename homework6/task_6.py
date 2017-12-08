@@ -9,7 +9,7 @@ def info_catcher():
     sys_inf=[]
     sysinf = {}
     sys_inf.append(platform.python_version())  # Installed python version
-    sys_inf.append(commands.getoutput("echo $VIRTUAL_ENV"))  # Python path
+    sys_inf.append(os.popen("which python").read().strip('\n'))  # Python path
     site_packages = next(p for p in sys.path if 'site-packages' in p)
     sys_inf.append(site_packages)  # Site-packages location
     sys_inf.append(sys.executable)  # Python exec location
@@ -26,10 +26,8 @@ def info_catcher():
         json.dump(sysinf,f,sort_keys=True,indent=3,separators=(',', ':'))
     with open ('yaml_rep.yaml','w') as f:
         yaml.dump(sysinf,f)
-    return sys_inf
 
 
 if __name__ == '__main__':
-    a = info_catcher()
-    print(a)
+    info_catcher()
 
